@@ -4,10 +4,10 @@ My hands-on training environment for developing job-ready IT skills.
 
 ## Workspace
 
-- `labs/` — practical lab exercises
+- `labs/` — practical lab exercises and lab infrastructure
 - `tickets/` — simulated support tickets and incidents
-- `scripts/` — automation and administration tools
-- `documentation/` — technical documentation
+- `scripts/` — training scripts and administration exercises
+- `documentation/` — technical documentation and knowledge-base work
 - `notes/` — working technical notes
-- `evidence/` — evidence of demonstrated skills
-- `projects/` — larger portfolio projects
+
+Demonstrated skills and employment evidence are maintained separately in the IT Career Portfolio. Substantial software projects may use their own repositories.
