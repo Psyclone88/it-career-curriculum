@@ -1,0 +1,11 @@
+# Large installation media
+*.iso
+
+# Virtual machine disk images
+*.qcow2
+*.img
+*.vdi
+*.vmdk
+
+# Downloaded installation-media directory
+labs/iso/
