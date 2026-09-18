@@ -19,3 +19,8 @@ The notes are organised by subject rather than by the date I learned something.
 ## Git
 
 - [Git Core Workflow](git/git-core-workflow.md)
+
+## Lab
+
+- [Career Lab Reference](lab/career-lab-reference.md)
+- [lab-srv01 Reference](lab/lab-srv01-reference.md)
