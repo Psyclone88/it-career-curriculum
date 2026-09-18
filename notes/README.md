@@ -15,6 +15,7 @@ The notes are organised by subject rather than by the date I learned something.
 - [systemd Services](linux/systemd-services.md)
 - [Users, sudo, Privileges and Permissions](linux/users-sudo-permissions.md)
 - [Fedora Package Management](linux/package-management.md)
+- [Shell and Filesystem Basics](linux/shell-and-filesystem.md)
 
 ## Git
 
@@ -24,3 +25,7 @@ The notes are organised by subject rather than by the date I learned something.
 
 - [Career Lab Reference](lab/career-lab-reference.md)
 - [lab-srv01 Reference](lab/lab-srv01-reference.md)
+
+## Quick Reference
+
+- [Current Quick Reference](quick-reference.md)
