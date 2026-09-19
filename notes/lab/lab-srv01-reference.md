@@ -49,12 +49,33 @@ Check current state rather than assuming this remains true:
     systemctl is-active mcelog rasdaemon
     systemctl --failed
 
-## Storage Observation
+## Storage
 
-The VM has a 40 GiB virtual disk, but the root filesystem was observed to use only about 15 GiB.
+Following INC-0003:
 
-This remains something to investigate later as part of Linux storage/LVM training.
+    Virtual disk:     40 GiB
+    Root LV:          25 GiB
+    Root filesystem:  XFS, approximately 25 GiB
+    VG free capacity: approximately 13 GiB
 
+The remaining VG capacity was deliberately left unallocated for future use.
+
+An offline libvirt snapshot named `pre-inc-0003-storage-change` was created before the storage change.
+
+## Web Service
+
+Following INC-0004:
+
+    Web server:       Apache httpd
+    httpd.service:    enabled / active
+    HTTP port:        TCP 80
+    Firewalld:        http service permitted permanently
+    Document root:    /var/www/html
+    Test page:        /var/www/html/index.html
+
+Remote HTTP access from `cipher-fedora` was verified successfully after reboot.
+
+Check the live service and firewall state rather than assuming this remains true.
 ## Important Rule
 
 This file is a convenient reference to the known lab configuration.

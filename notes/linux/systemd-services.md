@@ -212,6 +212,26 @@ Mental model:
 
 Conditions are useful troubleshooting evidence. A service may be installed and enabled but deliberately skipped because one of its conditions is not satisfied.
 
+## Service State Is Not Application Health
+
+A service being `active` proves that systemd currently considers the service running.
+
+It does not prove that:
+
+- the expected network socket is listening
+- the application is responding correctly
+- a firewall permits the traffic
+- the network path works
+- a remote client can reach the application
+
+Mental model:
+
+    service state ≠ application health ≠ network reachability
+
+Test each relevant layer independently.
+
+INC-0004 demonstrated this with Apache: `httpd` could be active while the application returned an HTTP error, and later the application could work locally while remote access was still blocked by firewalld.
+
 ## Remember
 
 - `systemctl` is used to inspect and control systemd units.
